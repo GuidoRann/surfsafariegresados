@@ -26,20 +26,12 @@ export default function Landing() {
   }, [])
 
   return (
-    <div className='flex flex-col min-h-screen w-screen font-poppins bg-surf-white'>
-      <Navbar />
-      
+     <div className="flex flex-col flex-1">
       <Hero />
-
       <HowToBuy />
-
       <SponsorsSection />
-
       <FAQSection />
-
       <InstagramFeed />
-
-      <Footer />
       {showBackToTop && <BackToTop />}
     </div>
   );
