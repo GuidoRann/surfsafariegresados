@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-import Navbar from '../components/Navbar';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Filter } from '../components/Filter';
 import BackToTop from '../components/BackToTop';
 import { FilterProductCard } from '../components/FilterProductCard';
+import Navbar from '../components/Navbar';
 
 
 const products = [
@@ -85,8 +85,8 @@ export default function Products() {
   }, [ categoriaSeleccionada ])
 
   return (
-    <main className="min-h-screen bg-gray-50">
-      <div className="pb-20">
+    <main>
+      <div className="pb-32">
         <Navbar />
       </div>
       <div className="container mx-auto px-4 py-8">

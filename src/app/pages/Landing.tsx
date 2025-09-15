@@ -1,4 +1,3 @@
-import Navbar from '../components/Navbar';
 import { useEffect, useState } from 'react';
 import BackToTop from '../components/BackToTop';
 import Hero from '../components/Hero';
@@ -6,6 +5,8 @@ import Footer from '../components/Footer';
 import InstagramFeed from '../components/InstagramFeed';
 import FAQSection from '../components/FAQSection';
 import HowToBuy from '../components/HowToBuy';
+import SponsorsSection from '../components/SponsorSection';
+import Navbar from '../components/Navbar';
 
 
 export default function Landing() {
@@ -25,12 +26,14 @@ export default function Landing() {
   }, [])
 
   return (
-    <div className='flex flex-col min-h-screen w-screen font-poppins'>
+    <div className='flex flex-col min-h-screen w-screen font-poppins bg-surf-white'>
       <Navbar />
       
       <Hero />
 
       <HowToBuy />
+
+      <SponsorsSection />
 
       <FAQSection />
 

@@ -1,6 +1,7 @@
 "use client";
 
-import {Instagram, Facebook, Mail, Phone, MapPin} from "lucide-react";
+import { Mail, Phone, MapPin} from "lucide-react";
+import { FaTiktok, FaInstagram, FaWhatsapp  } from "react-icons/fa";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -22,14 +23,20 @@ export default function Footer() {
                   href='https://www.instagram.com/surfsafariegresados/'
                   target='_blank'
                   className='text-brand-turquoise hover:text-brand-pink transition-all transform hover:scale-125'>
-                  <Instagram className='w-6 h-6' />
+                  <FaInstagram className='w-6 h-6' />
                   <span className='sr-only'>Instagram</span>
                 </a>
                 <a
                   href='#'
                   className='text-brand-turquoise hover:text-brand-pink transition-al transform hover:scale-125'>
-                  <Facebook className='w-6 h-6' />
-                  <span className='sr-only'>Facebook</span>
+                  <FaWhatsapp  className='w-6 h-6' />
+                  <span className='sr-only'>WhatsApp</span>
+                </a>
+                <a
+                  href='#'
+                  className='text-brand-turquoise hover:text-brand-pink transition-all transform hover:scale-125'>
+                  <FaTiktok className='w-6 h-6' />
+                  <span className='sr-only'>TikTok</span>
                 </a>
               </div>
             </div>

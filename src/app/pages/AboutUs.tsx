@@ -1,15 +1,13 @@
 import { FaFacebook, FaInstagram } from "react-icons/fa";
-
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 
 export default function AboutUs() {
   return (
-    <div className="h-screen w-screen">
-      <div>
+    <main className="min-h-screen bg-gradient-to-b from-purple-50 to-white pt-12">
+      <div className="mb-32">
         <Navbar />
       </div>
-    <main className="min-h-screen bg-gradient-to-b from-purple-50 to-white pt-12">
       <div className="container mx-auto px-4 py-12">
         <section className="rounded-3xl bg-white p-6 shadow-xl md:p-10 lg:p-12">
           <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-16">
@@ -86,6 +84,5 @@ export default function AboutUs() {
         </section>
       </div>
     </main>
-    </div>
   )
 }

@@ -2,9 +2,9 @@ import type React from "react"
 
 import { useState, useRef, useEffect } from "react"
 import { Heart, MessageCircle, Send, Bookmark } from "lucide-react"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
+import { Avatar, AvatarFallback, AvatarImage } from "@/app/components/ui/avatar"
+import { Button } from "@/app/components/ui/button"
+import { Card, CardContent, CardFooter, CardHeader } from "@/app/components/ui/card"
 import { cn } from "@/lib/utils"
 
 // Datos de ejemplo para el feed
