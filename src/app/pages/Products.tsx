@@ -3,7 +3,6 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { Filter } from '../components/Filter';
 import BackToTop from '../components/BackToTop';
 import { FilterProductCard } from '../components/FilterProductCard';
-import Navbar from '../components/Navbar';
 
 
 const products = [
@@ -86,25 +85,22 @@ export default function Products() {
 
   return (
     <main>
-      <div className="pb-32">
-        <Navbar />
-      </div>
-      <div className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-8 font-poppins text-blue-400">Ropa de Egresados</h1>
+      <div className="container mx-auto px-4 py-8 pt-32">
+        <h1 className="text-4xl md:text-5xl font-bold text-center mb-8 font-poppins text-blue-400">Nuestros Productos!</h1>
 
-        <Filter categoriaSeleccionada={ categoriaSeleccionada } setCategoriaSeleccionada={ setCategoriaSeleccionada } />
+      <Filter categoriaSeleccionada={ categoriaSeleccionada } setCategoriaSeleccionada={ setCategoriaSeleccionada } />
 
       <AnimatePresence> 
         <div className="mt-8">
           <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-              {productosFiltrados.map(( product ) => (
+              { productosFiltrados.map(( product ) => (
                 <FilterProductCard key={ product.id } product={ product } />
-              ))}
+              )) }
           </motion.div>
         </div>
         </AnimatePresence>
       </div>
-      {showBackToTop && <BackToTop />}
+      { showBackToTop && <BackToTop /> }
     </main>
   )
 }

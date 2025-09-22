@@ -1,14 +1,10 @@
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaTiktok, FaInstagram, FaWhatsapp  } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-import Navbar from '../components/Navbar';
 
 export default function AboutUs() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-purple-50 to-white pt-12">
-      <div className="mb-32">
-        <Navbar />
-      </div>
-      <div className="container mx-auto px-4 py-12">
+    <main className="min-h-screen bg-surf-white pt-32">
+      <div className="container mx-auto py-12">
         <section className="rounded-3xl bg-white p-6 shadow-xl md:p-10 lg:p-12">
           <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-16">
             {/* Imagen */}
@@ -29,11 +25,11 @@ export default function AboutUs() {
             {/* Presentación */}
             <div className="flex-1 space-y-8">
               <div>
-                <h2 className="mb-2 inline-block rounded-full bg-purple-100 px-4 py-1 text-sm font-medium text-purple-700">
+                <h2 className="mb-2 inline-block rounded-full bg-surf-lightblue/20 px-4 py-1 text-sm font-medium text-surf-lightblue">
                   ¿Quiénes somos?
                 </h2>
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 md:text-5xl">
-                  No somos como los <span className="text-purple-600">adultos aburridos</span> que conoces
+                  No somos como los <span className="text-surf-lightblue">adultos aburridos</span> que conoces
                 </h1>
               </div>
 
@@ -43,26 +39,26 @@ export default function AboutUs() {
                 parece diseñado por y para gente mayor.
               </p>
 
-              <div className="border-l-4 border-purple-600 pl-4 italic">
+              <div className="border-l-4 border-surf-blue pl-4 italic">
                 "Diseñamos para que cada prenda grite quién sos y te recuerde que este momento es solo el comienzo."
               </div>
 
               <div className="space-y-4 text-gray-600">
                 <p className="flex items-start gap-2">
-                  <span className="mt-1 text-purple-500">✦</span>
+                  <span className="mt-1 text-surf-lightblue">✦</span>
                   <span>
                     Creamos productos y experiencias que <strong>realmente importan</strong> en tu vida diaria
                   </span>
                 </p>
                 <p className="flex items-start gap-2">
-                  <span className="mt-1 text-purple-500">✦</span>
+                  <span className="mt-1 text-surf-lightblue">✦</span>
                   <span>
                     Nuestro equipo está formado por personas que <strong>entienden tu mundo</strong>, tus preocupaciones
                     y tus sueños
                   </span>
                 </p>
                 <p className="flex items-start gap-2">
-                  <span className="mt-1 text-purple-500">✦</span>
+                  <span className="mt-1 text-surf-lightblue">✦</span>
                   <span>
                     Trabajamos para que tengas las <strong>herramientas que necesitas</strong> para conquistar tu futuro
                   </span>
@@ -70,13 +66,17 @@ export default function AboutUs() {
               </div>
 
               <div className="flex items-center gap-6 pt-4">
-                <Link to="https://www.instagram.com/surfsafariegresados/" target="_blank" className="text-gray-500 transition-colors hover:text-[#EE2A7B]">
-                  <FaInstagram className="h-6 w-6" />
+                <Link to="https://www.instagram.com/surfsafariegresados/" target="_blank" className="text-gray-500 transition-all hover:text-[#EE2A7B] hover:scale-125">
+                  <FaInstagram className="h-7 w-7" />
                   <span className="sr-only">Instagram</span>
                 </Link>
-                <Link to="#" className="text-gray-500 transition-colors hover:text-[#4267B2]">
-                  <FaFacebook className="h-6 w-6" />
-                  <span className="sr-only">Facebook</span>
+                <Link to="#" className="text-gray-500 transition-all hover:text-black hover:scale-125">
+                  <FaTiktok className="h-7 w-7" />
+                  <span className="sr-only">TikTok</span>
+                </Link>
+                <Link to="/contact" className="text-gray-500 transition-all hover:text-[#25D366] hover:scale-125">
+                  <FaWhatsapp className="h-7 w-7" />
+                  <span className="sr-only">Whatsapp</span>
                 </Link>
               </div>
             </div>

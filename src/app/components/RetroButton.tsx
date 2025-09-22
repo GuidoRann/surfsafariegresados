@@ -14,7 +14,7 @@ interface RetroButtonProps {
 export default function RetroButton({ children, url, bgColor, onClick, isMobile, className, text}: RetroButtonProps) {
   if (url === undefined) url = '/';
 
-  const baseClassNames = `relative px-4 py-2 font-medium text-surf-white transition-all rounded-md 
+  const baseClassNames = `relative px-4 py-2 font-medium text-surf-white font-bold transition-all rounded-md 
             shadow-[3px_3px_0px_rgba(0,0,0,0.8)] translate-x-[-1px] translate-y-[-1px] 
             hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[4px_4px_0px_rgba(0,0,0,0.8)] 
             active:translate-x-0 active:translate-y-0 active:shadow-[1px_1px_0px_rgba(0,0,0,0.8)]`
@@ -22,13 +22,15 @@ export default function RetroButton({ children, url, bgColor, onClick, isMobile,
   const getBgColor = () => {
     switch (bgColor) {
       case 'blue':
-        return 'bg-primary-blue hover:bg-primary-blue/80'
+        return 'bg-surf-blue hover:bg-surf-blue/90'
       case 'lightblue':
-        return 'bg-secondary-blue hover:bg-secondary-blue/80'
+        return 'bg-surf-lightblue hover:bg-surf-lightblue/90'
       case 'yellow':
-        return 'bg-secondary-orange hover:bg-secondary-orange/80'
+        return 'bg-surf-yellow hover:bg-surf-yellow/90'
       case 'orange':
-        return 'bg-primary-orange hover:bg-primary-orange/80'
+        return 'bg-surf-orange hover:bg-surf-orange/90'
+      case 'red':
+        return 'bg-surf-red hover:bg-surf-red/90'
       default:
         return 'bg-black'
     }

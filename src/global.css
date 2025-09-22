@@ -5,13 +5,17 @@
 
 @custom-variant dark (&:is(.dark *));
 
+html {
+  scrollbar-gutter: stable;
+}
+
 @theme {
-  --color-surf-white: #F8F9FA;
-  --color-primary-gray: #EDF5FA;
-  --color-primary-blue: #00457F;
-  --color-secondary-blue: #2F8EE0;
-  --color-primary-orange: #EC6206;
-  --color-secondary-orange: #FFA723;
+  --color-surf-white: #EDF5FA;
+  --color-surf-blue: #00008A;
+  --color-surf-lightblue: #2F8EE0;
+  --color-surf-red: #FF3D05;
+  --color-surf-orange: #EC6206;
+  --color-surf-yellow: #FFA723;
 }
 
 @theme inline {

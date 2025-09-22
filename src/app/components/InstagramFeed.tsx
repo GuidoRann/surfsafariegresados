@@ -157,9 +157,9 @@ export default function InstagramFeed() {
   }
 
   return (
-    <div className="w-full bg-purple-200 p-4 pt-12 pb-6 md:py-18">
-      <h3 className="text-center text-4xl mb-4 text-blue-600 font-poppins font-bold">Seguinos en Instagram</h3>
-      <div className='w-20 h-1 bg-blue-700 mx-auto mb-8'></div>
+    <div className="w-full bg-surf-white p-4 pt-12 pb-6 md:py-18">
+      <h3 className="text-center text-4xl mb-4 text-surf-blue font-poppins font-bold">Seguinos en Instagram</h3>
+      <div className='w-20 h-1 bg-surf-blue mx-auto mb-8'></div>
       {/* Vista de escritorio: grid de posts */}
       {!isMobile && (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[60%] mx-auto py-5">

@@ -1,12 +1,10 @@
 import { useEffect, useState } from 'react';
 import BackToTop from '../components/BackToTop';
 import Hero from '../components/Hero';
-import Footer from '../components/Footer';
 import InstagramFeed from '../components/InstagramFeed';
 import FAQSection from '../components/FAQSection';
 import HowToBuy from '../components/HowToBuy';
-import SponsorsSection from '../components/SponsorSection';
-import Navbar from '../components/Navbar';
+// import SponsorsSection from '../components/SponsorSection';
 
 
 export default function Landing() {
@@ -26,10 +24,10 @@ export default function Landing() {
   }, [])
 
   return (
-     <div className="flex flex-col flex-1">
+     <div className="flex flex-col flex-1 bg-surf-white font-poppins">
       <Hero />
       <HowToBuy />
-      <SponsorsSection />
+      {/* <SponsorsSection /> */}
       <FAQSection />
       <InstagramFeed />
       {showBackToTop && <BackToTop />}

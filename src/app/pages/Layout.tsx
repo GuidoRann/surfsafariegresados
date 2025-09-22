@@ -1,13 +1,18 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export default function Layout() {
+  const location = useLocation();
+
+  const hideFooterRoutes = ["/contact", "/products", "/about"];
+  const hideFooter = hideFooterRoutes.includes( location.pathname );
+
   return (
-     <div className="flex flex-col min-h-screen w-screen font-poppins bg-surf-white">
+     <div className="flex flex-col min-h-screen w-screen font-poppins bg-primary-gray">
       <Navbar />
         <Outlet /> 
-      <Footer />
+      {!hideFooter && <Footer />}
     </div>
   );
 }
