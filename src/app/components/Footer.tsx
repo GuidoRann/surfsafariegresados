@@ -1,6 +1,4 @@
-"use client";
-
-import { Mail, Phone, MapPin} from "lucide-react";
+import { Phone, MapPin} from "lucide-react";
 import { FaTiktok, FaInstagram, FaWhatsapp  } from "react-icons/fa";
 
 export default function Footer() {
