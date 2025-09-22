@@ -14,8 +14,8 @@ export default function Hero() {
       <h1 className='mx-auto max-w-3xl text-5xl text-surf-blue text-shadow-lg font-cal-sans font-bold md:text-7xl pt-12'>
         SURFSAFARI
       </h1>
-      <p className='mx-auto mt-4 px-4 text-lg md:px-0 md:text-2xl text-black font-light md:font-extralight'>
-        Nosotros hacemos el buzo y ustedes la historia.
+      <p className='mx-auto mt-4 px-4 text-xl md:px-0 md:text-2xl text-black font-bold md:font-light'>
+        "Nosotros hacemos el buzo y ustedes la historia."
       </p>
 
       <div className='mt-8 flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0'>
