@@ -14,10 +14,10 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Landing />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/contact" element={<ContactUs />} />
-          <Route path="/promotions" element={<Promotions />} />
+          <Route path="/nosotros" element={<AboutUs />} />
+          <Route path="/productos" element={<Products />} />
+          <Route path="/contacto" element={<ContactUs />} />
+          <Route path="/promociones" element={<Promotions />} />
         </Route>
       </Routes>
     </BrowserRouter>

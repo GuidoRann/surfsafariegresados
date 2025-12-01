@@ -3,58 +3,8 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { Filter } from '../components/Filter';
 import BackToTop from '../components/BackToTop';
 import { FilterProductCard } from '../components/FilterProductCard';
+import { products } from '../components/productList';
 
-
-const products = [
-  {
-    id: 1,
-    text: "Buzo Egresados 2025",
-    category: "buzos",
-    image: "/Ropa/Buzo-1.webp",
-  },
-  {
-    id: 2,
-    text: "Campera Promoción 2025",
-    category: "camperas",
-    image: "/Ropa/Campera-1.webp",
-  },
-  {
-    id: 3,
-    text: "Remera Egresados Diseño Clásico",
-    category: "remeras",
-    image: "/Ropa/Remera-1.webp",
-  },
-  {
-    id: 4,
-    text: "Buzo Personalizado Escuela",
-    category: "buzos",
-    image: "/Ropa/Buzo-2.webp",
-  },
-  {
-    id: 5,
-    text: "Campera Universitaria",
-    category: "camperas",
-    image: "/Ropa/Campera-2.webp",
-  },
-  {
-    id: 6,
-    text: "Remera Promoción Diseño Moderno",
-    category: "remeras",
-    image: "/Ropa/Remera-2.webp",
-  },
-  {
-    id: 7,
-    text: "Buzo Deportivo Egresados",
-    category: "buzos",
-    image: "/Ropa/Buzo-3.webp",
-  },
-  {
-    id: 8,
-    text: "Remera Conmemorativa",
-    category: "remeras",
-    image: "/Ropa/Remera-3.webp",
-  },
-]
 
 export default function Products() {
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState( "todos" )
@@ -75,18 +25,28 @@ export default function Products() {
   }, [])
 
   useEffect(() => {
-    if (categoriaSeleccionada === "todos") {
+    if ( categoriaSeleccionada.includes( "todos" ) ) {
       setProductosFiltrados( products )
     } else {
-      const filtrados = products.filter(( product ) => product.category === categoriaSeleccionada )
-      setProductosFiltrados(filtrados)
+      const filtrados = products.filter(( product ) => product.category.includes( categoriaSeleccionada ) )
+      setProductosFiltrados( filtrados )
     }
   }, [ categoriaSeleccionada ])
 
   return (
-    <main>
-      <div className="container mx-auto px-4 py-8 pt-32">
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-8 font-poppins text-blue-400">Nuestros Productos!</h1>
+    <main className="relative min-h-screen py-12 font-poppins overflow-hidden">
+
+      <div className="fixed inset-0 -z-10">
+        <div className="absolute inset-0 bg-surf-white"></div>
+        <img
+          src="/back pagina.png"
+          alt="background"
+          className="absolute top-10 left-10 w-[35%] object-cover opacity-15 z-0"
+        />
+      </div>
+
+      <div className="container mx-auto z-10 px-4 pt-32">
+        <h1 className="text-7xl md:text-8xl tracking-wide text-stroke-blue leading-none font-surf-font text-center text-surf-lightblue">Nuestros Productos!</h1>
 
       <Filter categoriaSeleccionada={ categoriaSeleccionada } setCategoriaSeleccionada={ setCategoriaSeleccionada } />
 

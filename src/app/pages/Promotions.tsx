@@ -42,7 +42,7 @@ export default function PromotionsPage() {
       title: "Kit Escolar Completo",
       description:
         "Si compras 30 kits de ropa escolar, recibes un alumno liberado y una bandera de regalo para tu institución educativa.",
-      image: "/Ropa/Buzo-1.webp",
+      image: "/Clothes/Buzo-1.jpg",
       side: "left",
     },
     {
@@ -50,13 +50,16 @@ export default function PromotionsPage() {
       title: "Paquete Deportivo Institucional",
       description:
         "Al adquirir 25 uniformes deportivos completos, obtienes material deportivo adicional y una placa conmemorativa sin costo extra.",
-      image: "/Ropa/Buzo-3.webp",
+      image: "/Clothes/Buzo-3.jpg",
       side: "right",
     },
   ]
 
   return (
-    <div className="min-h-screen py-12 px-4">
+    <div className="min-h-screen py-12 px-4 bg-surf-white">
+
+      <img src="/back pagina.png" alt="background" className='fixed top-10 left-10 w-[35%] object-cover z-0 opacity-15' />
+
       <div className="container mx-auto pt-32">
         {/* Header */}
         <div className="text-center mb-16">

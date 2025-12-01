@@ -3,7 +3,17 @@ import { Link } from 'react-router-dom';
 
 export default function AboutUs() {
   return (
-    <main className="min-h-screen bg-surf-white pt-32">
+    <main className="min-h-screen pt-32">
+
+      <div className="fixed inset-0 -z-10">
+        <div className="absolute inset-0 bg-surf-white"></div>
+        <img
+          src="/back pagina.png"
+          alt="background"
+          className="absolute top-10 left-10 w-[35%] object-cover opacity-15 z-0"
+        />
+      </div>
+
       <div className="container mx-auto py-12">
         <section className="rounded-3xl bg-white p-6 shadow-xl md:p-10 lg:p-12">
           <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-16">
@@ -70,11 +80,11 @@ export default function AboutUs() {
                   <FaInstagram className="h-7 w-7" />
                   <span className="sr-only">Instagram</span>
                 </Link>
-                <Link to="#" className="text-gray-500 transition-all hover:text-black hover:scale-125">
+                <Link to="https://www.tiktok.com/@surfsafari.e" target="_blank" className="text-gray-500 transition-all hover:text-black hover:scale-125">
                   <FaTiktok className="h-7 w-7" />
                   <span className="sr-only">TikTok</span>
                 </Link>
-                <Link to="/contact" className="text-gray-500 transition-all hover:text-[#25D366] hover:scale-125">
+                <Link to="/contacto" className="text-gray-500 transition-all hover:text-[#25D366] hover:scale-125">
                   <FaWhatsapp className="h-7 w-7" />
                   <span className="sr-only">Whatsapp</span>
                 </Link>

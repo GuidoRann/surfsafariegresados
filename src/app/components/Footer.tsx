@@ -25,13 +25,14 @@ export default function Footer() {
                   <span className='sr-only'>Instagram</span>
                 </a>
                 <a
-                  href='#'
+                  href='https://www.tiktok.com/@surfsafari.e'
+                  target='_blank'
                   className='text-brand-turquoise hover:text-black transition-all transform hover:scale-125'>
                   <FaTiktok className='w-6 h-6' />
                   <span className='sr-only'>TikTok</span>
                 </a>
                 <a
-                  href='/contact'
+                  href='/contacto'
                   className='text-brand-turquoise hover:text-[#25D366] transition-al transform hover:scale-125'>
                   <FaWhatsapp  className='w-6 h-6' />
                   <span className='sr-only'>WhatsApp</span>
@@ -87,10 +88,7 @@ export default function Footer() {
                   <span className='text-brand-orange mr-2'>🕙</span> Lunes a Viernes: 9:00 - 18:00
                 </li>
                 <li className='flex items-center'>
-                  <span className='text-brand-orange mr-2'>🕙</span> Sábados: 10:00 - 14:00
-                </li>
-                <li className='flex items-center'>
-                  <span className='text-brand-orange mr-2'>🕙</span> Domingos: Cerrado
+                  <span className='text-brand-orange mr-2'>🕙</span> Sábados y Domingos: Cerrado
                 </li>
               </ul>
             </div>

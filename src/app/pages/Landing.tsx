@@ -4,7 +4,6 @@ import Hero from '../components/Hero';
 import InstagramFeed from '../components/InstagramFeed';
 import FAQSection from '../components/FAQSection';
 import HowToBuy from '../components/HowToBuy';
-// import SponsorsSection from '../components/SponsorSection';
 
 
 export default function Landing() {
@@ -27,7 +26,6 @@ export default function Landing() {
      <div className="flex flex-col flex-1 bg-surf-white font-poppins">
       <Hero />
       <HowToBuy />
-      {/* <SponsorsSection /> */}
       <FAQSection />
       <InstagramFeed />
       {showBackToTop && <BackToTop />}

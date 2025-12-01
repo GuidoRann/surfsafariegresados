@@ -6,10 +6,10 @@ export default function Navbar() {
   const [ isScrolled, setIsScrolled ] = useState( false )
   const [ isMobileMenuOpen, setIsMobileMenuOpen ] = useState( false )
   const pages = [
-    { path: "/about", name: "Nosotros" },
-    { path: "/products", name: "Productos" },
-    { path: "/promotions", name: "Promociones" },
-    { path: "/contact", name: "Contáctanos" },
+    { path: "/nosotros", name: "Nosotros" },
+    { path: "/productos", name: "Productos" },
+    { path: "/promociones", name: "Promociones" },
+    { path: "/contacto", name: "Contáctanos" },
   ]
 
   const location = useLocation()
@@ -32,7 +32,7 @@ export default function Navbar() {
 
   return (
     <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-999999 transition-all duration-300 ${
           isScrolled ? "bg-surf-white shadow-lg py-3" : "bg-transparent py-4 md:py-6 "
         }`}
       >
@@ -96,14 +96,16 @@ export default function Navbar() {
           <div className="flex flex-col h-full">
             {/* Menu Header */}
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
-              <img src="/logo.png" alt="Logo" className="w-12 h-12" />
+              <a href="/">
+                <img src="/logo.png" alt="Logo" className="w-12 h-12" />
+              </a>
               <button
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="text-gray-600 hover:text-gray-800 transition-colors"
               >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
               </button>
             </div>
 
@@ -111,26 +113,26 @@ export default function Navbar() {
             <nav className="flex-1 px-6 py-8">
               <div className="space-y-6">
                 <a
-                  href="/about"
-                  className="block text-xl font-medium text-gray-800 hover:text-teal-600 transition-colors duration-200 py-2 border-b border-transparent hover:border-teal-600"
+                  href="/nosotros"
+                  className="block text-xl font-medium text-gray-800 py-2"
                 >
                   Nosotros
                 </a>
                 <a
-                  href="/products"
-                  className="block text-xl font-medium text-gray-800 hover:text-teal-600 transition-colors duration-200 py-2 border-b border-transparent hover:border-teal-600"
+                  href="/productos"
+                  className="block text-xl font-medium text-gray-800 py-2"
                 >
                   Productos
                 </a>
                 <a
-                  href="/promotions"
-                  className="block text-xl font-medium text-gray-800 hover:text-teal-600 transition-colors duration-200 py-2 border-b border-transparent hover:border-teal-600"
+                  href="/promociones"
+                  className="block text-xl font-medium text-gray-800 py-2"
                 >
                   Promociones
                 </a>
                 <a
-                  href="/contact"
-                  className="block text-xl font-medium text-gray-800 hover:text-teal-600 transition-colors duration-200 py-2 border-b border-transparent hover:border-teal-600"
+                  href="/contacto"
+                  className="block text-xl font-medium text-gray-800 py-2"
                 >
                   Contáctanos
                 </a>

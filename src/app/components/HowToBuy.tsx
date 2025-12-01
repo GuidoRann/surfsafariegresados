@@ -107,7 +107,7 @@ export default function HowToBuy() {
             </div>
 
             <div className='mt-16 text-center'>
-              <RetroButton text="¡Quiero mi buzo ya! 🚀" bgColor="red" className="p-4" url="/contact" /> 
+              <RetroButton text="¡Quiero mi buzo ya! 🚀" bgColor="red" className="p-4" url="/contacto" /> 
             </div>
           </div>
         </div>
